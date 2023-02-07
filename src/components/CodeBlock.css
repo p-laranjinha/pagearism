@@ -1,0 +1,11 @@
+div:has(> div > pre) {
+  height: 100%;
+}
+
+div:has(> pre) {
+  height: 100%;
+}
+
+pre {
+  margin: 0;
+}
