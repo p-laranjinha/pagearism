@@ -187,7 +187,8 @@ function LeftSide({
         position="relative"
         sx={{ top: "auto", bottom: 0, backgroundColor: "rgba(0, 0, 0, 1)" }}
       >
-        {trophy ? (
+        {trophy &&
+        JSON.parse(localStorage.getItem("settings")).display_timer_and_score ? (
           <Toolbar variant="dense" sx={{ justifyContent: "center" }}>
             <EmojiEventsIcon htmlColor={trophy} />
             {stopwatch ? (
